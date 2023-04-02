@@ -293,29 +293,30 @@ img {
   display: flex;
   gap: 24px;
   justify-content: center;
+  align-content: center;
 }
 
 .team-social-item {
-  height: 40px;
-  width: 40px;
 }
 
 .team-social-link {
+  height: 40px;
+  width: 40px;
   display: block;
-  height: 100%;
-  width: 100%;
   padding: 12px;
   border-radius: 50%;
   background-color: var(--logo-btn-color);
-  align-items: center;
   justify-content: center;
+  align-content: center;
 }
+
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--btn-hover-color);
 }
 
 .team-social-icon {
+  display: block;
   fill: var(--light);
 }
 
@@ -325,8 +326,10 @@ img {
   padding-top: 120px;
 }
 .customers-item {
-  height: 100%;
-  width: 100%;
+  width: 168px;
+  height: 88px;
+  justify-content: center;
+  align-content: center;
   padding: 16px 32px 16px 32px;
   border: 1px solid var(--customers-border-icon-color);
   border-radius: 4px;
@@ -341,7 +344,12 @@ img {
 
 .customers-icon {
   fill: var(--customers-border-icon-color);
-  display: block;
+}
+
+.customers-item:hover,
+.customers-item:focus {
+  border: 1px solid var(--btn-hover-color);
+  border-radius: 4px;
 }
 
 .customers-item:hover .customers-icon,
@@ -387,6 +395,8 @@ img {
   padding: 8px 8px;
   background-color: var(--logo-btn-color);
   border-radius: 50%;
+  justify-content: center;
+  align-content: center;
 }
 
 .footer-social-icon {
